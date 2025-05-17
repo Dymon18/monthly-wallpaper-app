@@ -18,14 +18,14 @@ The MVP delivers end-to-end functionality without external dependencies beyond P
 ### 3. Technology Choices & Rationale
 
 * **Backend:** Python + Pillow & Streamlit
-
   * *Why:* Rapid prototyping, mature image library, built-in UI widgets, free hosting on Streamlit Cloud.
+
 * **Frontend:** Streamlit
-
   * *Why:* Minimal boilerplate for web UI, integrated file-handling and widgets.
-* **Database:** None
 
+* **Database:** None
   * *Why:* Stateless processing; no persistent data storage needed initially.
+
 * **Other Tools:**
 
   * **GitHub:** Version control, collaboration, issue tracking.
@@ -34,16 +34,15 @@ The MVP delivers end-to-end functionality without external dependencies beyond P
 
 ### 4. Feature Roadmap & Sprints
 
-* **Sprint 1 (1 week):**
-
+* **Sprint 1 (1 session):**
   * Implement `resize_wallpaper.py` with CLI.
   * Write unit tests for resizing and padding logic.
-* **Sprint 2 (1 week):**
 
+* **Sprint 2 (1 session):**
   * Develop `app.py` with Streamlit UI (upload, inputs, download).
   * Integration tests for end-to-end flow.
-* **Sprint 3 (1 week):**
 
+* **Sprint 3 (1 session):**
   * Deploy to Streamlit Cloud.
   * Create scheduling guide and example cron entry.
   * Finalize README and documentation.
@@ -51,18 +50,19 @@ The MVP delivers end-to-end functionality without external dependencies beyond P
 ### 5. Testing & QA
 
 * **Test Cases:**
-
   * Standard images (various aspect ratios).
   * Edge cases: extremely tall/narrow images; unsupported file types.
+
 * **QA Tools:** `pytest` for unit and integration tests; manual checks on physical devices.
+
 * **Strategy:** Unit tests for core functions; integration tests via automated script; UAT through manual UI trials.
 
 ### 6. Scaling & Future App
 
 * **Scaling Considerations:**
-
   * Add caching or parallel processing for batch jobs.
   * Dockerize application for consistent deployment.
+  
 * **Future Enhancements:**
 
   * Automatic image sourcing via Unsplash API or predefined folder.
