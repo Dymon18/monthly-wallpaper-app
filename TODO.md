@@ -1,0 +1,3 @@
+- watermark removal
+- sizing options
+- fix image spacings
