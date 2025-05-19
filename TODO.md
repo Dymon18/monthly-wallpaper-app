@@ -1,3 +1,5 @@
 - watermark removal
 - sizing options
 - fix image spacings
+- output folder
+- check fsmegamall 
