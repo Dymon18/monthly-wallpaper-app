@@ -1,9 +1,29 @@
 > **Author:** Dymon18
 > **Date Started:** 2025-05-17
-> **Last Edited:** 2025-05-19
+> **Last Edited:** 2025-06-03
 > **Access Repo:**
 > git clone https://github.com/Dymon18/monthly-wallpaper-app.git
 (https://github.com/Dymon18/monthly-wallpaper-app.git)
+
+---
+## Usage
+1. Activate virtual environment with:
+> source venv/bin/activate
+2. Deactivate with
+> deactivate
+
+watermark_removal.py
+Usage Examples:
+> python3 src/watermark_removal.py --input assets/01raw/your_image.jpg  
+> python3 src/watermark_removal.py --input assets/01raw/your_image.jpg --output assets/02cleaned/custom_output.jpg
+> python3 src/watermark_removal.py --input assets/01raw/your_image.jpg --output assets/02cleaned/custom_output.jpg --box_x 100 --box_y 500 --box_w 300 --box_h 80  
+> python3 src/watermark_removal.py --input assets/01raw/your_image.jpg --output assets/02cleaned/custom_output.jpg --box_x 100 --box_y 500 --box_w 300 --box_h 80 --fill_color "255,0,0"
+
+resize_wallpaper.py
+> python3 src/resize_wallpaper.py --input assets/02cleaned/your_image.jpg  
+> python3 src/resize_wallpaper.py --input assets/02cleaned/your_image.jpg --output assets/03resized/custom_output.jpg  
+> python3 src/resize_wallpaper.py --input assets/02cleaned/your_image.jpg --output assets/03resized/custom_output.jpg --width 1080 --height 1920  
+> python3 src/resize_wallpaper.py --input assets/02cleaned/your_image.jpg --output assets/03resized/custom_output.jpg --width 1080 --height 1920 --bg "#FFFFFF"
 
 ---
 
