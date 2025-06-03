@@ -2,6 +2,21 @@
 import argparse
 from PIL import Image, ImageColor
 
+"""
+resize_wallpaper.py
+
+Resizes the input image to fit the bottom two-thirds of a target wallpaper size and pads the top third with a specified background color.
+Adjust target width, height, and background color using CLI flags.
+
+Usage:
+  python resize_wallpaper.py --input in.png --output out.png \
+      --width 1080 --height 1920 [--bg "#ff5733"]
+
+Dependencies:
+  pillow
+"""
+
+
 def process_image(img: Image.Image, target_w: int, target_h: int, bg_color: str) -> Image.Image:
     """
     Resize the given image to cover the bottom two-thirds of a canvas of size (target_w x target_h),
